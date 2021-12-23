@@ -7,7 +7,7 @@ namespace Assignment3
     class ThreadingDemo
     {
         public static bool isThreading = false;
-        public static int WaitTime = 1000;
+        public static int WaitTime = 3000;
         public static bool IsMultipleThreading = false;
         public static bool IsComplete = false;
         public static void Main(string[] args)
