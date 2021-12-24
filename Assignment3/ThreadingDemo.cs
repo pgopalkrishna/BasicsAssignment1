@@ -55,14 +55,15 @@ namespace Assignment3
             }
             Console.ReadLine();
         }
-        
+
         public static void PrintEvenNumbers()
         {
             Console.WriteLine("Even Numbers from 1 to 1000=>");
             for (int p = 0; p <= 1000; p += 2)
             {
                 Console.WriteLine("Even Number : " + p);
-                if (IsMultipleThreading && p==1000) {
+                if (IsMultipleThreading && p == 1000)
+                {
                     IsComplete = true;
                 }
                 if (isThreading)
@@ -98,22 +99,22 @@ namespace Assignment3
                 }
             }
         }
-        public static void PrintPalindromeNumber1()
-        {
-            for (int pl = 1; pl <= 100; pl++) 
-            {
-                
-                char[] pl_char = pl.ToString().ToCharArray();
-               string rev_pl= pl_char.Reverse<char>().ToArray().ToString();
-                if (pl == Convert.ToInt32(rev_pl)) 
-                {
-                    Console.WriteLine("Palindrome Number=" + pl);
-                    if (isThreading)
-                    {
-                        Thread.Sleep(WaitTime);
-                    }
-                }
-            }
-        }
+        //public static void PrintPalindromeNumber1()
+        //{
+        //    for (int pl = 1; pl <= 100; pl++) 
+        //    {
+
+        //        char[] pl_char = pl.ToString().ToCharArray();
+        //       string rev_pl= pl_char.Reverse<char>().ToArray().ToString();
+        //        if (pl == Convert.ToInt32(rev_pl)) 
+        //        {
+        //            Console.WriteLine("Palindrome Number=" + pl);
+        //            if (isThreading)
+        //            {
+        //                Thread.Sleep(WaitTime);
+        //            }
+        //        }
+        //    }
+        //}
     }
 }
